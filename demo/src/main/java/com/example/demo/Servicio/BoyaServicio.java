@@ -1,17 +1,48 @@
 package com.example.demo.Servicio;
 
 import com.example.demo.Entidades.Boya;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+@Service
+public class BoyaServicio {
 
-public interface BoyaServicio {
+    public BoyaServicio boyaServicio;
 
-    public List<Boya> mostrarBoyas();
+    public BoyaServicio(){
 
-    public Boya crearBoya(Boya boya);
+    }
 
-    public Boya obtenerBoyaPorId(Long id);
+    public BoyaServicio(BoyaServicio boyaServicio) {
+        this.boyaServicio = boyaServicio;
+    }
 
-    public Boya actualizarBoya(Boya boya);
+    public BoyaServicio getBoyaServicio() {
+        return boyaServicio;
+    }
+
+    public void setBoyaServicio(BoyaServicio boyaServicio) {
+        this.boyaServicio = boyaServicio;
+    }
+
+    public List<Boya> mostrarBoyas() {
+        return null;
+    }
+
+    public Boya crearBoya(Boya boya) {
+        return null;
+    }
+
+    public Boya colorBoya(String colorBoya) {
+        return null;
+    }
+
+    public Boya obtenerBoyaPorId(Long id) {
+        return null;
+    }
+
+    public Boya actualizarBoya(Boya boya) {
+        return null;
+    }
 
 }
