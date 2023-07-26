@@ -1,8 +1,10 @@
 package com.example.demo.Controlador;
 
+import com.example.demo.Dto.Request.BoyaRequest;
 import com.example.demo.Entidades.Boya;
 import com.example.demo.Servicio.BoyaServicio;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,36 +15,38 @@ public class BoyaControlador {
 
 
     @Autowired
-    private MuestraControlador muestraControlador;
     private BoyaServicio boyaServicio;
 
 
     @PostMapping("boya_id")
-    public String crearBoya(@RequestBody Boya boya){
+    public ResponseEntity crearBoya(@RequestBody BoyaRequest boyaRequest){
         Boya boya= new Boya();
 
-        return "boya";
+        return ResponseEntity.;
 
         }
     @GetMapping("/boya")
-    public String mostarBoyas(Boya boya){
+    public ResponseEntity mostarBoyas(Boya boya){
         List<Boya> boyas= boyaServicio.mostrarBoyas();
-        return "boya";
+        return ResponseEntity.ok(boyas);
     }
 
     @GetMapping("boya_id")
-    public String obtenerBoyaPorId(@PathVariable Long id){
+    public ResponseEntity obtenerBoyaPorId(@PathVariable Long id){
         Boya boyaDB = boyaServicio.obtenerBoyaPorId(id);
-        return "boya_id";
+        return ResponseEntity.ok(id);
 
-        boyaDB.setId(boya.obtenerBoyaPorId(id));
     }
 
 
     @PutMapping("boya_id")
-    public String actualizarBoya(@RequestBody Long id){
-        Boya boya= boyaServicio.actualizarBoya(Long id);
-        return "boya_id";
+    public ResponseEntity actualizarBoyaColor(@RequestBody Long id, @RequestParam String colorLuz){
+        Boya boya = new Boya();
+        colorLuz="Rojo";
+        boyaServicio.obtenerBoyaPorId(id);
+        boyaServicio.actualizarBoyaColor(colorLuz);
+
+        return ResponseEntity.ok(id);
     }
 
 

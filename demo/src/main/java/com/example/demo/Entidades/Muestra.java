@@ -74,4 +74,6 @@ public class Muestra {
     public Boya getBoya() {
         return boya;
     }
+
+
 }

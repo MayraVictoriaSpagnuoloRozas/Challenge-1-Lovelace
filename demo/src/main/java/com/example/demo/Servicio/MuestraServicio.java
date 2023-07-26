@@ -2,6 +2,7 @@ package com.example.demo.Servicio;
 
 import com.example.demo.Entidades.Muestra;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class MuestraServicio {
@@ -24,7 +25,8 @@ public class MuestraServicio {
         this.muestraServicio = muestraServicio;
     }
 
-    public Muestra registroMuestra() {
+    public Muestra registroMuestra(Long id, LocalDateTime fechahoramuestra, String matricula,
+                                   double longitudMuestra, double latitudMuestra, double nivelMar) {
         return null;
     }
 
@@ -35,4 +37,6 @@ public class MuestraServicio {
     public Muestra resetearMuestra() {
         return null;
     }
+
+    public Muestra actualizarMuestra(){return null;}
 }

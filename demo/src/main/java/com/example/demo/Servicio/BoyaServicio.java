@@ -33,15 +33,12 @@ public class BoyaServicio {
         return null;
     }
 
-    public Boya colorBoya(String colorBoya) {
-        return null;
-    }
 
     public Boya obtenerBoyaPorId(Long id) {
         return null;
     }
 
-    public Boya actualizarBoya(Boya boya) {
+    public Boya actualizarBoyaColor(Boya boya) {
         return null;
     }
 

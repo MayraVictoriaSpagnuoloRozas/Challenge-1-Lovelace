@@ -11,7 +11,7 @@ public class Boya {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="boya_id")
-    public Long id;
+    public Long Boyaid;
 
     @Column(name="color_luz", length = 100, nullable = false)
     public String colorLuz;//aca seria public enum?
@@ -31,7 +31,7 @@ public class Boya {
     }
 
     public Boya(Long id, String colorLuz, Long longitudBoya, Long latitudBoya, List<Muestra> muestras) {
-        this.id = id;
+        this.Boyaid = id;
         this.colorLuz = colorLuz;
         this.longitudBoya = longitudBoya;
         this.latitudBoya = latitudBoya;
@@ -39,11 +39,11 @@ public class Boya {
     }
 
     public Long getId() {
-        return id;
+        return Boyaid;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.Boyaid = id;
     }
 
     public String getColorLuz() {
