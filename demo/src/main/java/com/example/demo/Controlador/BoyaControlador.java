@@ -4,6 +4,7 @@ import com.example.demo.Dto.Request.BoyaRequest;
 import com.example.demo.Entidades.Boya;
 import com.example.demo.Servicio.BoyaServicio;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -19,10 +20,13 @@ public class BoyaControlador {
 
 
     @PostMapping("boya_id")
-    public ResponseEntity crearBoya(@RequestBody BoyaRequest boyaRequest){
+    public ResponseEntity<Boya> crearBoya(@RequestBody BoyaRequest boyaRequest){
         Boya boya= new Boya();
 
-        return ResponseEntity.;
+        boya.setLatitudBoya(boyaRequest.getLatitudBoya());
+        boya.setLongitudBoya(boyaRequest.getLongitudBoya());
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(boya);
 
         }
     @GetMapping("/boya")
@@ -44,7 +48,7 @@ public class BoyaControlador {
         Boya boya = new Boya();
         colorLuz="Rojo";
         boyaServicio.obtenerBoyaPorId(id);
-        boyaServicio.actualizarBoyaColor(colorLuz);
+        boyaServicio.actualizarBoyaColor(boya);
 
         return ResponseEntity.ok(id);
     }

@@ -1,10 +1,11 @@
 package com.example.demo.Servicio;
 
 import com.example.demo.Entidades.Muestra;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
+@Service
 public class MuestraServicio {
 
     public MuestraServicio muestraServicio;
@@ -30,7 +31,7 @@ public class MuestraServicio {
         return null;
     }
 
-    public List<Muestra> mostrarMuestraPorID() {
+    public Muestra mostrarMuestraPorID() {
         return null;
     }
 

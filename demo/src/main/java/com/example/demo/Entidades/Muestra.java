@@ -28,6 +28,9 @@ public class Muestra {
     @Column(name="nivel_mar",length = 100, nullable = false)
     private double nivelMar;
 
+    @Column (name="color_muestra",length = 100, nullable = false)
+    private String colorMuestra;
+
     @ManyToOne
     @JoinColumn(name = "boya_id")
     private Boya boya;
@@ -75,5 +78,11 @@ public class Muestra {
         return boya;
     }
 
+    public String getColorMuestra() {
+        return colorMuestra;
+    }
 
+    public void setColorMuestra(String colorMuestra) {
+        this.colorMuestra = colorMuestra;
+    }
 }

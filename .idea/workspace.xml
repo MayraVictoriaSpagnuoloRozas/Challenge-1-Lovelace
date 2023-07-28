@@ -30,11 +30,7 @@
       <change afterPath="$PROJECT_DIR$/../AgendaContactosEjSpring2/AgendaContactosEjSpring2/src/main/resources/static/fondo.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AgendaContactosEjSpring2/AgendaContactosEjSpring2/src/main/resources/static/logo.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AgendaContactosEjSpring2/AgendaContactosEjSpring2/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Request/BoyaRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Response/BoyaResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Response/GenericResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Response/MuestraResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Response/ResponseMethodsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Repository/BoyaRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ejercicio grupal Dao tienda/.idea/Ejercicio grupal Dao tienda.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../EjercicioGrupalDao concesionaria/.idea/EjercicioGrupalDao.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProyectoFinalADA/.idea/.gitignore" afterDir="false" />
@@ -53,9 +49,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Controlador/BoyaControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Controlador/BoyaControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Controlador/MuestraControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Controlador/MuestraControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Entidades/Boya.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Entidades/Boya.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Request/BoyaRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Request/BoyaRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Response/BoyaResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Response/BoyaResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Response/GenericResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Dto/Response/GenericResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Entidades/Muestra.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Entidades/Muestra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Servicio/BoyaServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Servicio/BoyaServicio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Servicio/MuestraServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Servicio/MuestraServicio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ej2_estudiantesSpring/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ej2_estudiantesSpring/.idea/compiler.xml" afterDir="false" />

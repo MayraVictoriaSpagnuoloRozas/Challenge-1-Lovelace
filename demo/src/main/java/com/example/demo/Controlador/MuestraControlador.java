@@ -35,7 +35,7 @@ public class MuestraControlador {
     @GetMapping("/muestras/boyas/{boya_id}")
     public ResponseEntity<Muestra> mostrarMuestraPorId(@PathVariable("boya_id") long id){
 
-        Muestra muestra= muestraservicio.mostrarMuestraPorID(id);
+        Muestra muestra= muestraservicio.mostrarMuestraPorID();
 
         if (muestra == null) {
             return ResponseEntity.notFound().build();
@@ -47,16 +47,16 @@ public class MuestraControlador {
     }
     @DeleteMapping("/muestras/{id}")
     public ResponseEntity<String> resetearBoya(@PathVariable("boya_id") long id){
-        Muestra muestra= muestraservicio.mostrarMuestraPorID(id);
+        Muestra muestra= muestraservicio.mostrarMuestraPorID();
             if (muestra == null) {
 
                 return ResponseEntity.notFound().build();
             } else {
 
-                muestra.setColorLuz("AZUL");
+                muestra.setColorMuestra("AZUL");
 
 
-                muestraservicio.actualizarMuestra(muestra);
+                muestraservicio.actualizarMuestra();
 
 
                 return ResponseEntity.noContent().build();
